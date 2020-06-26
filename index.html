@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Registration Form</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Extended" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+
+</head>
+
+<body>
+  <div class="container" id="header-wrapper">
+   <div class="row">
+   <div class="col-md-12">
+    <fieldset>
+        <h2>Registration Made Easy<br><small></small></h2>
+        <p  class="required" style="color: red; margin: 0px;">Required</p>
+    </fieldset>
+       </div>
+    </div>
+  </div>
+
+<div class="container" id="form-wrapper">
+  <div class="row">
+    <div class="col-md-12">
+       <form action="https://docs.google.com/forms/d/e/1FAIpQLSfNWjPJIfB53HLuj0C0ZJwWtbxROd5wDQO7T7mM6oWi908JuQ/formResponse"
+      target="_self"
+      id="bootstrapForm"
+      method="POST">
+    <!-- <fieldset>
+        <h2>Registration Made Easy<br><small></small></h2>
+    </fieldset> -->
+
+    <div class="form-group">
+        <legend for="1297378764"  class="required">First &amp; Last Name</legend>
+        <div class="form-group">
+            <input id="1250180254" type="text" name="entry.1250180254" class="form-control" required="required">
+        </div>
+        <legend for="1493707738"  class="required">Email Address</legend>
+        <div class="form-group">
+            <textarea id="1177076449" name="entry.1177076449" class="form-control" required="required"></textarea>
+        </div>
+        <legend for="1350952847"  class="required">Phone Number</legend>
+        <div class="form-group">
+            <input id="1609993677" type="text" name="entry.1609993677" class="form-control" required="required">
+        </div>
+       
+    </div>
+    
+    <!-- Field type: "choices" id: "2004559667" -->
+    <div class="form-group">
+        <legend for="2004559667" class="required">In the past 24 hours, have you had any of the following symptoms: fever or chills, cough, shortness of breath, fatigue, muscle or body aches, nausea or diarrhea?</legend>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="entry.716695337" value="Yes" required="required">
+                    Yes
+                </label>
+            </div>
+            <div class="radio">
+                <label class="">
+                    <input type="radio" name="entry.716695337" value="No" required="required">
+                    No
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="fbzx" value="7403647851836912674">
+    <!--
+        CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+        This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+        Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+        We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+    -->
+    <input type="hidden" name="pageHistory" value="0">
+
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+
+    </div>
+  </div>
+</div>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+ <script src="js/scripts.js"></script>
+</body>
+</html>
